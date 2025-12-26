@@ -6,6 +6,7 @@ and a scatter plot of speed vs. lap time.
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import numpy as np
 
 sns.set_theme(style="whitegrid") # pleasant-looking style
 
