@@ -11,7 +11,7 @@ def convert_to_seconds(time_str):
     try:
         minutes, seconds = time_str.split(":")
         return int(minutes) * 60 + float(seconds)
-    except Exception:
+    except:
         return np.nan
  
 # Load CSV data
