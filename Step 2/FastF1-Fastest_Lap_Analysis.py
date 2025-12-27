@@ -9,7 +9,7 @@ fastf1.Cache.enable_cache('cache')
 
 # Load race sessions
 # 'R' = Race session type
-session_bah = fastf1.get_session(2025, 'Bahrain', 'R') # Note: FastF1 uses Bahrain not Bahrain. The name Bahrain will be used throughout the project.
+session_bah = fastf1.get_session(2025, 'Bahrain', 'R') # Note: FastF1 uses Bahrain not Bahrein. The name Bahrain will be used throughout the project.
 session_bah.load()
 session_mon = fastf1.get_session(2025, 'Monaco', 'R')
 session_mon.load()
