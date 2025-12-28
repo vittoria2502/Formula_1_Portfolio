@@ -77,7 +77,7 @@ def fuel_burn(df: pd.DataFrame, driver: str | None = None, initial_fuel: float =
     # (LapNumber - 1) ensures that at Lap 1 the correction is zero, since no fuel has been burned yet
     df["FuelWeightEffect"] = ((df["LapNumber"] - 1) * fuel_per_lap) * 0.03
     
-    # Compute fuel-corrected lap time by removing the benefit from fuel burn
+    # Compute fuel-corrected lap time by removing the effect of fuel weight
     df["FuelCorrectedLapTime"] = df["LapTimeSeconds"] - df["FuelWeightEffect"]
     fig = px.scatter(
         df,
